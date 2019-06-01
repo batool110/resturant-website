@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Restaurant Website</title>
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+  <!-- Main css -->
+  <link rel="stylesheet" href="CSS/main.css">
+
+  <!-- FONT AWESOME -->
+  <script src="js/all.js"></script>
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+  <!--magnific popup-->
+  <link rel="stylesheet" href="magnific popup/magnific-popup.css">
+
+  <!--  adding firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBlY4wJZ_c9AkWLwEe4a9YqT9qIdnfaD-Y",
+      authDomain: "uitlab-5d169.firebaseapp.com",
+      databaseURL: "https://uitlab-5d169.firebaseio.com",
+      projectId: "uitlab-5d169",
+      storageBucket: "uitlab-5d169.appspot.com",
+      messagingSenderId: "75562997666"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <!-- jquery -->
+  <script src="JS/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body class="admin" onload="loadProductList()">
+
+  <!-- fire base connection -->
+  <!--Admin Login-->
+  <div id="login_div" class="container firebaseCheck">
+    <h3>Firebase Admin login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <a id="fun" onclick="login()" class="btn main-btn">Login to Account</a>
+  </div>
+  <!--End of Admin Login-->
+
+  <!--Admin page-->
+  <div id="user_div" class="firebaseCheck align-items-center justify-content-center">
+
+    <div class="text-center">
+      <h1>Welcome Admin</h1>
+      <p class="primary-color">Welcome to Firebase web login. You're currently logged in.</p>
+    </div>
+
+    <!-- table to display the products ot the resturants to the admin-->
+    <section class="py-5 my-5">
+      <div class="container">
+        <div class="row ">
+
+          <div class="col-md-6 ">
+            <!-- ******* title ************ -->
+            <div class="row ">
+              <div class="col ">
+                <h1 class="text-uppercase ">Product List</h1>
+              </div>
+            </div>
+
+
+            <!-- *******end of title ************ -->
+            <!--Single Item -->
+            <div class="single-item d-flex justify-content-between my-3 py-3">
+              <div class="single-item-text ">
+                <div id="productList" class="productList ">
+                  <table id="productTbl" class="tbl_product_list productTbl" border="2">
+                    <tr>
+                      <th>Product code</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                    </tr>
+                    <tr>
+                      <th class="productCode"></th>
+                      <th class="productName"></th>
+                      <th class="productPrice"></th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!--End of Single Item -->
+          </div>
+          <!-- End of 1st col-->
+
+          <div class="col-md-6 ">
+            <!-- ******* title ************ -->
+            <div class="row text-center ">
+              <div class="col">
+                <h1 class="text-uppercase ">Add update and delete Product</h1>
+              </div>
+            </div>
+
+
+            <!-- *******end of title ************ -->
+
+            <!--Single Item -->
+            <div class="single-item d-flex justify-content-between my-3 py-3">
+              <!--ADD Product-->
+              <div class="Add_product py-3">
+
+                <div class="container">
+                  <input type='text' id='product_code' placeholder="Code....." />
+                  <input type='text' id='product_name' placeholder="Name......" />
+                  <input type='text' id='product_price' placeholder="Price...." />
+                </div>
+
+                <a class="btn main-btn my-1 text-capitalize background" onclick="addProduct()">Send Data</a>
+                <a class="btn main-btn my-1 text-capitalize background" onclick="updateProduct()">Update Data</a>
+                <a class="btn main-btn my-1 text-capitalize background" onclick="deleteProduct()">delete Data</a>
+              </div>
+              <!-- table to display the products ot the resturants to the admin-->
+            </div>
+
+          </div>
+          <!-- End of 2nd col -->
+
+        </div>
+      </div>
+    </section>
+
+    <a id="fun" onclick="logout()" class="btn main-btn logout">Logout</a>
+  </div>
+  <!--End of Admin page-->
+
+  <!--end of fire base connection -->
+
+
+
+
+
+  <!-- main javascript -->
+  <script src="JS/Admin.js"></script>
+
+</body>
+
+</html>

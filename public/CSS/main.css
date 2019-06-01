@@ -1,0 +1,357 @@
+
+
+/* white color */
+
+.info{
+    background: rgba(61, 36, 36, 0.61);
+}
+
+body{
+    align-self: auto;
+    font-family: 'Dancing Script', cursive;
+    color: bisque;
+    background: url(../img/Name.jpg) center/cover fixed no-repeat;
+}
+
+input{
+    font-size: 150%;
+}
+
+.Register-container{
+    word-spacing: 0.6rem;
+    font-size: 200%;
+}
+
+.primary-color{
+    color:#e97979;
+}
+
+.info a{
+    transition: all 2s ease-in-out;
+}
+
+.info a:hover{
+    color:beige;
+}
+
+/*---------header-------------*/
+
+#header{
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../img/pexels-photo-941861.jpeg);
+    background-position: center;
+    background-size: fixed;
+    background-repeat: repeat;
+    position: relative;
+}
+.height-90{
+    min-height: calc(100vh - 94px);
+ 
+}
+
+.banner h1{
+    border-top: 6px dotted rgba(211, 200, 200, 0.61);
+    border-bottom: 6px dotted rgba(211, 200, 200, 0.61);
+    animation: fromleft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromleft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-btn{
+    color:  bisque;
+    font-size: 2rem;
+    border: 2px solid beige;
+    /* transition: color 2s ease-in-out;*/
+    transition: all 2s ease;
+}
+
+.su-btn{
+    animation: fromright;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.main-btn:hover{
+    color: bisque;
+    border: 2px bisque;
+    background: #e97979;
+}
+
+@keyframes fromright{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 49%;
+    background:beige;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: frombottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.header-link:hover{
+    color: black;
+}
+
+@keyframes frombottom{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px)
+    }
+}
+
+/*.....................Navbar................*/
+.nav-btn{
+    background: transparent;
+    color: #e97979;
+    border: 2px solid #e97979;
+    font-size: 23px;
+}
+
+.navbar{
+    background: bisque;
+    padding: 20px 20px;
+    transform: all 1s ease;
+}
+
+.navbar-background{
+    padding: 5px 20px;
+}
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+.navbar-brand :hover{
+    color: rgb(0, 0, 0);
+}
+
+.nav-link{
+    color: #020202;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size: 23px;
+    transition: all 2s ease;
+}
+
+.nav-btn :hover{
+    border: 2px solid #e97979;
+}
+
+.toggler-btn{
+    border: 2px solid #e97979;
+    padding: 5px;
+    transition: all 2s ease;
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #e97979;
+    transition: all 2s ease;
+}
+
+.nav-link :hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+/* --------------- menu item ---------------- */
+
+.item-container{
+    position: relative;
+    /* for link*/
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0),rgba(0,0,0));
+    transition: all 2s ease;
+}
+
+item-img{
+   transition: all 2s ease;
+}
+
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #e97979;
+    font-size: 2rem;
+    border-top: 3px solid #242424;
+    border-bottom: 3px solid #242424;
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link{
+    opacity: 1;
+}
+
+.item-link:hover{
+    color: beige;
+    border: 3px solid beige;
+    background: #242424;
+}
+
+.item-container:hover{
+    outline: 10px solid #e97979;
+    outline-offset: 0.8rem;
+}
+
+/*................menu..................*/
+#menu{
+    background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255,255,255,0.7)), url(../img/pexels-photo-941861.jpeg)center/cover fixed no-repeat;
+}
+
+.special{
+    border: 3px solid #e97979;
+    position: relative;
+}
+
+/*................Order Section..................*/
+.height-60{
+    min-height: 60vh;
+}
+
+#section .card{
+    background: rgba(0,0,0,0.5);
+    transition: all 2s ease;
+}
+
+#section #input-text{
+    background: bisque;
+    color: black;
+}
+
+#section .card input{
+    background: rgba(228, 133, 133, 0.5);
+    color: rgb(250, 250, 250);
+    transition: all 2s ease;
+}
+
+#section .card input::placeholder{
+    color: rgb(250, 250, 250);
+}
+
+.order-btn {
+    background: bisque;
+    border: 2px solid #e97979;
+    color: #e97979;
+    transition: all 2s ease-in-out ;
+}
+
+.order-btn:hover {
+    background: gray;
+    border: 2px solid #000000;
+    color: black;
+}
+
+/*..................firebase check.............*/
+.firebaseCheck{
+   
+    margin-top: 20%;
+     
+    vertical-align: middle;
+}
+
+.firebaseCheck input{
+    display: block;
+    border: 2px solid #e97979;
+    border-radius: 5px;
+    padding: 15px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+/*...........Admin page................*/
+.logout{
+    width: 50%;
+    text-decoration-style: solid;
+    background: #242424;
+    font-size: 300%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    background:linear-gradient(rgba(218, 99, 99, 0.5),rgba(19, 17, 17, 0.5));
+}
+
+.background{
+    background:linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,0.5));
+}
+
+/*.................product List...........*/
+.admin{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(../img/pexels-photo-941861.jpeg)center/cover fixed no-repeat;
+}
+
+.productList{
+    position: relative;
+    margin-top: 10%;   
+}
+
+.tbl_product_list{
+    border: 5px solid #e97979;
+    font-size: 25px;
+}
+
+.add-del-updete{
+    align-content: center;
+    margin-left: 5%;
+}
+
+.add-del-updete input{
+    width: 75%;
+}
+
+/*.....................footer....................*/
+.scrollTop{
+    position: fixed;
+    background: bisque;
+    border-radius: 10px;
+    display: inline-block;
+    bottom: 70px;
+    right: 10px;
+}

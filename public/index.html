@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Restaurant Website</title>
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+  <!-- Main css -->
+  <link rel="stylesheet" href="CSS/main.css">
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+  <!--magnific popup-->
+  <link rel="stylesheet" href="magnific popup/magnific-popup.css">
+
+  <!--  adding firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBlY4wJZ_c9AkWLwEe4a9YqT9qIdnfaD-Y",
+      authDomain: "uitlab-5d169.firebaseapp.com",
+      databaseURL: "https://uitlab-5d169.firebaseio.com",
+      projectId: "uitlab-5d169",
+      storageBucket: "uitlab-5d169.appspot.com",
+      messagingSenderId: "75562997666"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+
+<body>
+
+  <!-- first page -->
+
+  <!-- social icons-->
+  <div class="container-fluid info p-3" id="top-icons">
+
+    <!-- row that contain containers of header-->
+    <div class="row">
+
+      <!-- containre that contain header items of main page-->
+      <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+
+        <!-- container that contain social icons-->
+        <div class="info-icons p-2">
+          <a href="#" class="mr-2 primary-color"> <i class="fab fa-facebook fa-2x"></i> </a>
+          <a href="#" class="mr-2 primary-color"> <i class="fab fa-instagram fa-2x"></i> </a>
+          <a href="#" class="mr-2 primary-color"> <i class="fab fa-twitter fa-2x"></i> </a>
+          <a href="#" class="mr-2 primary-color"> <i class="fab fa-facebook-messenger fa-2x"></i> </a>
+        </div>
+        <!--end of container that contain social icons-->
+
+        <!-- container that contain login ane signup at the other corner of social icons -->
+        <div class="Register-container primary-color">
+          <!--  <a id="fun" href="signIn.html" class="btn main-btn my-1 text-capitalize">login </a>
+          <a id="fun" href="signUp.html" class="btn main-btn my-1 text-capitalize">signUp </a> -->
+          <a id="fun" href="admin.html" class="btn primary-color main-btn text-capitalize">Admin</a>
+        </div>
+        <!-- end of container that contain login ane signup at the other corner of social icons -->
+
+      </div>
+      <!--end of containre that contain header items of main page-->
+    </div>
+    <!--end of row that contain containers of header-->
+  </div>
+  <!-- end of social icons-->
+
+  <!-- header section-->
+  <header class="container-fluid" id="header">
+    <!-- container that contain name of restaurant and order online button-->
+    <div class="container">
+      <!-- container that place items in center-->
+      <div class="row height-90 align-items-center justify-content-center">
+        <div class="col">
+          <!-- name of the restaurant-->
+          <div class="banner text-center">
+            <h1 class="display-1 text-capitalize w=50 mx-auto "> <small><I><b>mP </b></I></small> <strong class="primary-color">mangoPeople
+              </strong> </h1>
+            <a href="#order-online" class="btn main-btn su-btn my-4 text-capitalize">Order Online </a>
+          </div>
+        </div>
+      </div>
+      <!--end of container that contain name of restaurant and order online button-->
+    </div>
+
+    <a href="#special-items" class="btn header-link primary-color"><i class="fas fa-arrow-down"></i></a>
+  </header>
+  <!--end of header section-->
+  <!-- End of 1st page-->
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a href="#" class="navbar-brand txt-uppercase primary-color">mango people</a>
+    <button class="navbar-toggle d-block d-lg-none" type="button" data-toggle="collapse" data-target="#mynavbar">
+      <div class="toggler-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </button>
+
+    <!-- links -->
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="#special-items" class="nav-link text-capitalize">special items</a>
+        </li>
+        <li>
+          <a href="#menu" class="nav-link text-capitalize">menue</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link text-capitalize">about us</a>
+        </li>
+        <li>
+          <a href="#section" class="nav-link text-capitalize">order online</a>
+        </li>        
+      </ul>
+      <form class="form-inline d-none d-lg-block mr-5" >
+        <button class="btn nav-btn text-capitalize" type="button">order online</button>
+      </form>
+    </div>
+
+  </nav>
+
+  <!-- start of second page -->
+  <!--Special items-->
+  <section class="py-5" id="special-items">
+
+    <div class="container my-5">
+      <div class="row parent-container">
+
+        <!-- ....... menu item .......... -->
+        <div class="col-10 mx-auto col-sm-6 col-lg-5 my-5">
+          <div class="item-container">
+            <img src="img/vegetables-italian-pizza.jpg" class="img-fluid img-thumbnail item-img" alt="vegetables italian pizza">
+            <a href="img/vegetables-italian-pizza.jpg">
+              <h1 class="text-uppercase text-center item-link px-3">pizza</h1>
+            </a>
+          </div>
+        </div>
+
+        <!-- ....... menu item .......... -->
+        <div class="col-10 mx-auto col-sm-6 col-lg-5 my-5">
+          <div class="item-container">
+            <img src="img/soup.jpeg" class="img-fluid img-thumbnail item-img" alt="vegetables italian pizza">
+            <a href="img/soup.jpeg">
+              <h1 class="text-uppercase text-center item-link px-3">soup</h1>
+            </a>
+          </div>
+        </div>
+
+        <!-- ....... menu item .......... -->
+        <div class="col-10 mx-auto col-sm-6 col-lg-5 my-5">
+          <div class="item-container">
+            <img src="img/steak.jpeg" class="img-fluid img-thumbnail item-img" alt="vegetables italian pizza">
+            <a href="img/steak.jpeg">
+              <h1 class="text-uppercase text-center item-link px-3">steak</h1>
+            </a>
+          </div>
+        </div>
+
+        <!-- ....... menu item .......... -->
+        <div class="col-10 mx-auto col-sm-6 col-lg-5 my-5">
+          <div class="item-container">
+            <img src="img/cake.jpeg" class="img-fluid img-thumbnail item-img" alt="vegetables italian pizza">
+            <a href="img/cake.jpeg">
+              <h1 class="text-uppercase text-center item-link px-3">cake</h1>
+            </a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--end of special items-->
+
+  <section id="menu" class="py-5 my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- ******* title ************ -->
+          <div class="row">
+            <div class="col">
+              <h1 class="primary-color text-uppercase">soups</h1>
+            </div>
+          </div>
+
+
+          <!-- *******end of title ************ -->
+          <!--Single Item -->
+          <div class="single-item d-flex justify-content-between my-3 py-3">
+            <div class="single-item-text">
+              <h2 class="text-uppercase text-dark">thai soup</h2>
+              <h4 class="text-muted">ingredients</h4>
+            </div>
+
+            <div class="single-item-price align-self-end">
+              <h1 class="text-capitalize text-dark">Rs100</h1>
+            </div>
+          </div>
+          <!--End of Single Item -->
+
+          <!--Single Item -->
+          <div class="single-item d-flex justify-content-between my-3 py-3 special">
+            <div class="single-item-text">
+              <h2 class="text-uppercase text-dark">hot and sour soup</h2>
+              <h4 class="text-muted">ingredients</h4>
+            </div>
+
+            <div class="single-item-price align-self-end">
+              <h1 class="text-capitalize text-dark">Rs100</h1>
+            </div>
+          </div>
+
+          <!--End of Single Item -->
+          <!-- ******* title ************ -->
+          <div class="row">
+            <div class="col">
+              <h1 class="primary-color text-uppercase">pizza</h1>
+            </div>
+          </div>
+
+
+          <!-- *******end of title ************ -->
+
+
+          <!--Menu section-->
+          <!--Single Item -->
+          <div class="single-item d-flex justify-content-between my-3 py-3 ">
+            <div class="single-item-text">
+              <h2 class="text-uppercase text-dark">chicken tikka</h2>
+              <h4 class="text-muted">ingredients</h4>
+            </div>
+
+            <div class="single-item-price align-self-end">
+              <h1 class="text-capitalize text-dark">Rs100</h1>
+            </div>
+          </div>
+          <!--End of Single Item -->
+
+          <!--Single Item -->
+          <div class="single-item d-flex justify-content-between my-3 py-3 special">
+            <div class="single-item-text">
+              <h2 class="text-uppercase text-dark">hot and sour soup</h2>
+              <h4 class="text-muted">ingredients</h4>
+            </div>
+
+            <div class="single-item-price align-self-end">
+              <h1 class="text-capitalize text-dark">Rs100</h1>
+            </div>
+          </div>
+
+          <!--End of Single Item -->
+        </div>
+        <!-- End of 1st col-->
+
+        <div class="col-md-6">
+          <!-- ******* title ************ -->
+          <div class="row">
+            <div class="col">
+              <h1 class="primary-color text-uppercase">pasta</h1>
+            </div>
+          </div>
+
+
+          <!-- *******end of title ************ -->
+          <!--Single Item -->
+          <div class="single-item d-flex justify-content-between my-3 py-3 special">
+            <div class="single-item-text">
+              <h2 class="text-uppercase text-dark">thai soup</h2>
+              <h4 class="text-muted">ingredients</h4>
+            </div>
+
+            <div class="single-item-price align-self-end">
+              <h1 class="text-capitalize text-dark">Rs100</h1>
+            </div>
+          </div>
+          <!--End of Single Item -->
+
+          <!--Single Item -->
+          <div class="single-item d-flex justify-content-between my-3 py-3">
+            <div class="single-item-text">
+              <h2 class="text-uppercase text-dark">hot and sour soup</h2>
+              <h4 class="text-muted">ingredients</h4>
+            </div>
+
+            <div class="single-item-price align-self-end">
+              <h1 class="text-capitalize text-dark">Rs100</h1>
+            </div>
+          </div>
+
+          <!--End of Single Item -->
+          <!-- ******* title ************ -->
+          <div class="row">
+            <div class="col">
+              <h1 class="primary-color text-uppercase">cake</h1>
+            </div>
+          </div>
+
+
+          <!-- *******end of title ************ -->
+          <!--Single Item -->
+          <div class="single-item d-flex justify-content-between my-3 py-3 special">
+            <div class="single-item-text">
+              <h2 class="text-uppercase text-dark">chicken tikka</h2>
+              <h4 class="text-muted">ingredients</h4>
+            </div>
+
+            <div class="single-item-price align-self-end">
+              <h1 class="text-capitalize text-dark">Rs100</h1>
+            </div>
+          </div>
+          <!--End of Single Item -->
+
+          <!--Single Item -->
+          <div class="single-item d-flex justify-content-between my-3 py-3 ">
+            <div class="single-item-text">
+              <h2 class="text-uppercase text-dark">hot and sour soup</h2>
+              <h4 class="text-muted">ingredients</h4>
+            </div>
+
+            <div class="single-item-price align-self-end">
+              <h1 class="text-capitalize text-dark">Rs100</h1>
+            </div>
+          </div>
+          <!--End of Single Item -->
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--end of Menu section-->
+
+  <!-- About section-->
+
+  <section id="about" class="py-5">
+
+    <div class="container">
+
+      <!-- About text-->
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <h1 class="text-uppercase display-3">about us</h1>
+          <h2 class="text-muted">
+            who we are and where owr restaurent is and how much experiance
+            we have and how famous we are in our home town and many more........
+          </h2>
+        </div>
+
+        <!-- images
+        <div class="col-md-6 about-pictures my-4 d-none d-lg-block ">
+          <img src="img/cake.jpeg" alt="cake" class="img-1 img-thumbnail about-image">
+          <img src="img/soup.jpeg" alt="cake" class="img-2 img-thumbnail about-image">
+          <img src="img/burger.jpeg" alt="cake" class="img-3 img-thumbnail about-image">
+          <img src="img/steak.jpeg" alt="cake" class="img-4 img-thumbnail about-image">
+          <img src="img/vegetables-italian-pizza.jpg" alt="cake" class="img-5 img-thumbnail about-image">
+        </div>  -->
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- End of About section-->
+
+  <!-- Order section -->
+
+  <section id="section">
+    <div class="container-flid no-padding">
+      <div class="row">
+        <!-- Map -->
+        <div class="col-md-6 my-3 align-self-center">
+          <div class="embed-responsive embed-responsive-21by9 height-60">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924234.6303886302!2d66.59494075428755!3d25.193389454320712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C+Karachi+City%2C+Sindh%2C+Pakistan!5e0!3m2!1sen!2s!4v1549440871576"
+              class="embed-responsive-item" width="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Order section -->
+        <div class="col-md-6 my-3">
+          <div class="card text-center">
+            <div class="card-header">
+              <h1 class="text-uppercase">order online</h1>
+            </div>
+            <div class="card-body">
+              <form>
+                <!-- 1st Input -->
+                <div class="input-group-prepend my-3">
+                  <span class="input-group-text" id="input-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+
+                  <input id="text" type="text" placeholder="Enter Your Name Here" class="form-control form-control-lg">
+                </div>
+
+                <!-- 2st Input -->
+                <div class="input-group-prepend my-3">
+                  <span class="input-group-text" id="input-text">
+                    <i class="fas fa-phone"></i>
+                  </span>
+
+                  <input id="phone" type="number" placeholder="Enter Your Number Here" class="form-control form-control-lg">
+                </div>
+
+                <!-- 3st Input -->
+                <div class="input-group-prepend my-3">
+                  <span class="input-group-text" id="input-text">
+                    <i class="fas fa-utensils"></i>
+                  </span>
+
+                  <input id="order" type="text" placeholder="Enter Your Order Here" class="form-control form-control-lg">
+                </div>
+
+                <!-- 4st Input -->
+                <div class="input-group-prepend my-3">
+                  <span class="input-group-text" id="input-text">
+                    <i class="fas fa-location-arrow"></i>
+                  </span>
+
+                  <input type="text" placeholder="Enter Your Address Here" class="form-control form-control-lg">
+                </div>
+
+                <button id="bbb" type="submit" class="btn btn-block btn-lg text-uppercase order-btn"><i class="far fa-hand-point-right mr- 2"></i>
+                  Order</button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--End Order section -->
+
+  <!-- social icons-->
+  <div class="container-fluid info p-3" id="top-icons">
+
+    <!-- row that contain containers of header-->
+    <div class="row">
+
+      <!-- containre that contain header items of main page-->
+      <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+
+        <!-- container that contain social icons-->
+        <div class="info-icons p-2">
+          <a href="#" class="mr-2 primary-color"> <i class="fab fa-facebook fa-2x"></i> </a>
+          <a href="#" class="mr-2 primary-color"> <i class="fab fa-instagram fa-2x"></i> </a>
+          <a href="#" class="mr-2 primary-color"> <i class="fab fa-twitter fa-2x"></i> </a>
+          <a href="#" class="mr-2 primary-color"> <i class="fab fa-facebook-messenger fa-2x"></i> </a>
+        </div>
+        <!--end of container that contain social icons-->
+
+      </div>
+      <!--end of containre that contain header items of main page-->
+    </div>
+    <!--end of row that contain containers of header-->
+    <a href="#top-icons" id="back-to-top" class="p-1"><i class="fas fa-arrow-up primary-color fa-3x scrollTop"></i></a>
+  </div>
+  <!-- end of social icons-->
+
+
+  <!-- fire base connection -->
+  <div class="container firebaseCheck">
+
+    <h1 id="order-online" class="text-uppercase py-3">order online</h1>
+
+    <input type='text' id='name' name='name' placeholder="Name" />
+    <input type='text' id='age' name='age' placeholder="Age" />
+    <a href="#order-online" class="btn main-btn my-4 text-capitalize">place order </a>
+  </div>
+  <!--end of fire base connection -->
+
+  <!-- jquery -->
+  <script src="JS/jquery-3.3.1.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="JS/bootstrap.bundle.min.js"></script>
+
+  <!-- FONT AWESOME -->
+  <script src="js/all.js"></script>
+
+  <!--ripple-->
+  <script src="js/jquery.ripples-min.js"></script>
+
+  <!--magnific popup-->
+  <script src="magnific popup/jquery.magnific-popup.js"></script>
+
+  <!--js-->
+  <script src="js/Admin.js"></script>
+
+
+</body>
+
+</html>
